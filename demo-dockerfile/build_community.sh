@@ -16,5 +16,5 @@ docker run --name $name -d \
   -v $volume:/ipc \
   docker.iscinternal.com/intersystems/$build_version:$com_version
 # Run unit test
-# sleep 15
-# docker exec -it $name bash -c 'echo -e "s ^UnitTestRoot=\"/unit_tests\"\nw ^UnitTestRoot\nd ##class(%UnitTest.Manager).RunTest(\"CSP\")\nh" | iris session iris'
+sleep 15
+docker exec -it $name bash -c 'echo -e "s ^UnitTestRoot=\"/unit_tests\"\nw ^UnitTestRoot\nd ##class(%UnitTest.Manager).RunTest(\"CSP\")\nh" | iris session iris'
