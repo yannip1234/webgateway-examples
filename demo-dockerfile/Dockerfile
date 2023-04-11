@@ -72,8 +72,9 @@ RUN cd ${HOME} \
     && rm -rf ${WEB_GATEWAY_FOLDER}.tar \
     && rm -rf ${WEB_GATEWAY_FOLDER}.tar.gz
 
-COPY CSP.conf /home/irisowner/apache2/conf
-COPY CSP.ini /home/irisowner/webgateway/bin
+COPY --chown=irisowner CSP.conf /home/irisowner/apache2/conf
+COPY --chown=irisowner CSP.ini /home/irisowner/webgateway/bin
 
 RUN echo "Include /home/irisowner/apache2/conf/CSP.conf" >> ${HOME}/apache2/conf/httpd.conf
+
 
