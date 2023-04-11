@@ -29,9 +29,9 @@ USER ${ISC_PACKAGE_MGRUSER}
 # If on ARM, change this to an ARM-based kit.
 # NB: This Dockerfile assumes you already downloaded the Web Gateway and placed
 # the tarball locally on your host.
-ARG APACHE_URL="https://dlcdn.apache.org/httpd/httpd-2.4.54.tar.gz" \
-    APACHE_FOLDER="httpd-2.4.54" \
-    WEB_GATEWAY_FOLDER="WebGateway-2022.2.0.368.0-lnxubuntu2204x64" \
+ARG APACHE_URL="https://dlcdn.apache.org/httpd/httpd-2.4.57.tar.gz" \
+    APACHE_FOLDER="httpd-2.4.57" \
+    WEB_GATEWAY_FOLDER="WebGateway-2023.2.0NOPWS.105.0-lnxubuntu2204x64" \
     PLATFORM="lnxubuntu2204x64"
 
 
